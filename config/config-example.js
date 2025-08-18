@@ -7,7 +7,8 @@ Config.bannedHosts = ['cool.jit.su', 'pokeball-nixonserver.rhcloud.com'];
 
 Config.whitelist = [
 	'wikipedia.org'
-
+	'pokepast.es'
+	'play.tanoso.online'
 	// The full list is maintained outside of this repository so changes to it
 	// don't clutter the commit log. Feel free to copy our list for your own
 	// purposes; it's here: https://play.pokemonshowdown.com/config/config.js
