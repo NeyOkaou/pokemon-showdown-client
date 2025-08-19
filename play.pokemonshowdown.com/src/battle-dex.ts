@@ -296,6 +296,7 @@ export const Dex = new class implements ModdedDex {
 		}
 		if (avatar.includes('.') && window.Config?.server?.registered) {
 			// custom avatar served by the server
+			//lol
 			const protocol = (Config.server.port === 443) ? 'https' : 'http';
 			const server = `${protocol}://${Config.server.host}:${Config.server.port}`;
 			return `${server}/avatars/${encodeURIComponent(avatar).replace(/%3F/g, '?')}`;
