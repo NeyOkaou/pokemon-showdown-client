@@ -245,7 +245,7 @@ export const Dex = new class implements ModdedDex {
 	fxPrefix = 'https://raw.githubusercontent.com/NeyOkaou/pokemon-sprites/main/fx/'
 	
     loadedSpriteData = {xy: 1, bw: 0};
-    moddedDexes: {[mod: string]: ModdedDex} = {};
+	moddedDexes: {[mod: string]: ModdedDex} = { };
 
 	/**
 	 * April Fools' Day setting:
