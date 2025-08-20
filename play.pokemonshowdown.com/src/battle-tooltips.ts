@@ -2259,6 +2259,11 @@ export class BattleTooltips {
 			if (!value.tryAbility("Guts")) value.modify(0.5, 'Burn');
 		}
 
+		// Frostbite works like Burn, but for Special moves
+		if (serverPokemon.status === 'frb' && move.category === 'Special') {
+			value.modify(0.5, 'Frostbite');
+		}
+
 		if (
 			move.id === 'steelroller' &&
 			!this.battle.hasPseudoWeather('Electric Terrain') &&
