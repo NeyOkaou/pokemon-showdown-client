@@ -1609,7 +1609,7 @@ export class Battle {
 			this.scene.resultAnim(pokemon, 'Paralyzed', 'par');
 			break;
 		case 'frz':
-			this.scene.resultAnim(pokemon, 'Frozen', 'frz');
+			this.scene.resultAnim(pokemon, 'Frostbitten', 'frz');
 			break;
 		case 'slp':
 			this.scene.resultAnim(pokemon, 'Asleep', 'slp');
@@ -2060,7 +2060,7 @@ export class Battle {
 				this.scene.resultAnim(poke, 'Already paralyzed', 'neutral');
 				break;
 			case 'frz':
-				this.scene.resultAnim(poke, 'Already frozen', 'neutral');
+				this.scene.resultAnim(poke, 'Already frostbitten', 'neutral');
 				break;
 			case 'unboost':
 				this.scene.resultAnim(poke, 'Stat drop blocked', 'neutral');
@@ -2171,7 +2171,7 @@ export class Battle {
 				this.scene.runStatusAnim('par' as ID, [poke]);
 				break;
 			case 'frz':
-				this.scene.resultAnim(poke, 'Frozen', 'frz');
+				this.scene.resultAnim(poke, 'Frostbitten', 'frz');
 				this.scene.runStatusAnim('frz' as ID, [poke]);
 				break;
 			default:
