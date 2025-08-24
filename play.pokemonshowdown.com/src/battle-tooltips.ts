@@ -1073,6 +1073,12 @@ export class BattleTooltips {
 			if (this.battle.gen <= 2 && pokemon.status === 'par') {
 				stats.spe = Math.floor(stats.spe * 0.25);
 			}
+
+			// Frostbite: halve Special Attack
+			if (pokemon.status === 'frz') {
+				stats.spa = Math.floor(stats.spa * 0.5);
+			}
+
 		}
 
 		// gen 1 doesn't support items
@@ -2260,7 +2266,7 @@ export class BattleTooltips {
 		}
 
 		// Frostbite works like Burn, but for Special moves
-		if (serverPokemon.status === 'frb' && move.category === 'Special') {
+		if (serverPokemon.status === 'frz' && move.category === 'Special') {
 			value.modify(0.5, 'Frostbite');
 		}
 
