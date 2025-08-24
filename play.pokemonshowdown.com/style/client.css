@@ -14,7 +14,10 @@ body {
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 
 	/* see https://pokemonshowdown.com/credits */
-	background: #344b6c url(../fx/client-bg-charizards.jpg) no-repeat left center fixed;
+	/*background: #344b6c url(https://raw.githubusercontent.com/NeyOkaou/pokemon-sprites/97807485add6229099550acab707b1afe7c5b3e4/fx/client-bg-charizards.jpg
+) no-repeat left center fixed;*/
+ background: #344b6c url(https://th.bing.com/th/id/R.b3f922bb336db8b3251c2888be01b15b?rik=pCJTyVQlBSc71g&pid=ImgRaw&r=0
+) no-repeat left center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
