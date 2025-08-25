@@ -16,7 +16,8 @@ body {
 	/* see https://pokemonshowdown.com/credits */
 	/*background: #344b6c url(https://raw.githubusercontent.com/NeyOkaou/pokemon-sprites/97807485add6229099550acab707b1afe7c5b3e4/fx/client-bg-charizards.jpg
 ) no-repeat left center fixed;*/
- background: #344b6c url(https://th.bing.com/th/id/R.b3f922bb336db8b3251c2888be01b15b?rik=pCJTyVQlBSc71g&pid=ImgRaw&r=0
+ background: #344b6c url(https://raw.githubusercontent.com/NeyOkaou/pokemon-sprites/4076e46c7bb2bf376c9c1afff765b5909bca922d/fx/client-bg-ocean.jpg
+
 ) no-repeat left center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -3012,7 +3013,8 @@ p.or:after {
 	display: block;
 	width: 144px;
 	height: 90px;
-	background: url(../fx/client-bgsheet.png) no-repeat scroll 0px 0px;
+	background: url(https://raw.githubusercontent.com/NeyOkaou/pokemon-sprites/4076e46c7bb2bf376c9c1afff765b5909bca922d/fx/client-bgsheet.png
+) no-repeat scroll 0px 0px;
 }
 .formlist button {
 	background-repeat: no-repeat;
