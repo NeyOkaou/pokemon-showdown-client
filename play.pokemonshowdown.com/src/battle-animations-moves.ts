@@ -12941,121 +12941,49 @@ export const BattleMoveAnims: AnimTable = {
 	brainfreeze: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-			}, {
-				x: defender.x + 30,
-				y: defender.y + 30,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 200,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-				time: 75,
-			}, {
-				x: defender.x + 20,
-				y: defender.y - 30,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 275,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-				time: 150,
-			}, {
-				x: defender.x - 30,
-				y: defender.y,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 350,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-				time: 225,
-			}, {
-				x: defender.x - 10,
-				y: defender.y + 10,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 425,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-				time: 300,
-			}, {
-				x: defender.x + 10,
-				y: defender.y - 10,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 500,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.4,
-				opacity: 0.6,
-				time: 375,
-			}, {
-				x: defender.x - 20,
-				y: defender.y,
-				z: defender.z,
-				scale: 0.6,
-				opacity: 0.3,
-				time: 575,
-			}, 'linear', 'explode');
-
-			scene.showEffect('electroball', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
 				opacity: 0.5,
-				time: 550,
+				time: 450,
 			}, {
-				scale: 4,
+				scale: 2,
 				opacity: 0,
-				time: 750,
+				time: 700,
 			}, 'linear');
-			scene.showEffect('electroball', {
+			scene.showEffect('icicle', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
-				opacity: 0.5,
-				time: 600,
+				opacity: 1,
+				time: 400,
 			}, {
-				scale: 4,
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(20),
+				scale: 3,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('icicle', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 500,
+			}, {
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(20),
+				scale: 3,
 				opacity: 0,
 				time: 800,
 			}, 'linear');
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
-		prepareAnim: BattleOtherAnims.selfstatus.anim,
 	},
 	fakeout: {
 		anim(scene, [attacker, defender]) {
@@ -21761,84 +21689,148 @@ export const BattleMoveAnims: AnimTable = {
 				x: defender.x,
 				time: 100,
 			});
-			attacker.anim({
-				opacity: 0,
-				y: attacker.y - 80,
-				time: 300,
-			}, 'swing');
-			attacker.anim({
-				x: defender.x,
-				y: defender.y - 80,
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+			}, {
+				x: defender.x + 30,
+				y: defender.y + 30,
 				z: defender.z,
-				opacity: 0,
-				time: 1,
-			}, 'linear');
-			attacker.anim({
-				x: defender.x,
+				scale: 0.6,
+				opacity: 0.2,
+				time: 200,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 75,
+			}, {
+				x: defender.x + 20,
+				y: defender.y - 30,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.2,
+				time: 275,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 150,
+			}, {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.2,
+				time: 350,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 225,
+			}, {
+				x: defender.x - 10,
 				y: defender.y + 10,
 				z: defender.z,
-				opacity: 1,
-				time: 350,
-			}, 'decel');
-			scene.showEffect('mistball', {
+				scale: 0.6,
+				opacity: 0.2,
+				time: 425,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 300,
+			}, {
+				x: defender.x + 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.2,
+				time: 500,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 375,
+			}, {
+				x: defender.x - 20,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.2,
+				time: 575,
+			}, 'linear', 'explode');
+
+			scene.showEffect('iceball', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
-				opacity: 0.8,
+				opacity: 0.5,
 				time: 550,
 			}, {
-				scale: 3,
+				scale: 4,
 				opacity: 0,
-				time: 700,
+				time: 750,
 			}, 'linear');
-			scene.showEffect('mistball', {
+			scene.showEffect('iceball', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
-				opacity: 0.8,
-				time: 650,
+				opacity: 0.5,
+				time: 600,
 			}, {
-				scale: 3,
+				scale: 4,
 				opacity: 0,
 				time: 800,
 			}, 'linear');
-			scene.showEffect('mistball', {
-				x: defender.x,
-				y: defender.y,
-				z: defender.z,
-				scale: 0,
-				opacity: 0.8,
-				time: 750,
-			}, {
-				scale: 3,
-				opacity: 0,
-				time: 900,
-			}, 'linear');
-			attacker.anim({
-				x: defender.x,
-				y: defender.y - 80,
-				z: defender.z,
-				opacity: 0,
-				time: 300,
-			}, 'accel');
-			attacker.anim({
-				y: attacker.y - 80,
-				opacity: 0,
-				time: 1,
-			}, 'linear');
-			attacker.anim({
-				time: 300,
-				opacity: 1,
-			}, 'decel');
-			defender.delay(500);
+			defender.delay(125);
 			defender.anim({
-				z: defender.behind(20),
-				time: 100,
+				z: defender.behind(5),
+				time: 75,
 			}, 'swing');
 			defender.anim({
-				time: 300,
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 150,
 			}, 'swing');
 		},
 	},
