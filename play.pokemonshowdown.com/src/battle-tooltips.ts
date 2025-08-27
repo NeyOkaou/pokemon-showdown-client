@@ -1981,6 +1981,13 @@ export class BattleTooltips {
 			}
 			value.set(20 + 20 * boostCount);
 		}
+		if (['laserdelusion'].includes(move.id) && target) {
+			let boostCount = 0;
+			for (const boost of Object.values(pokemon.boosts)) {
+				if (boost > 0) boostCount += boost;
+			}
+			value.set(20 + 20 * boostCount);
+		}
 		if (move.id === 'trumpcard') {
 			const ppLeft = 5 - this.ppUsed(move, pokemon);
 			let basePower = 40;
