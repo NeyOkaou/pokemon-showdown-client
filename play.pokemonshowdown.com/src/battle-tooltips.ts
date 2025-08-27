@@ -1986,7 +1986,7 @@ export class BattleTooltips {
 			for (const boost of Object.values(pokemon.boosts)) {
 				if (boost > 0) boostCount += boost;
 			}
-			value.set(20 + 20 * boostCount);
+			value.set(80 + 20 * boostCount);
 		}
 		if (move.id === 'trumpcard') {
 			const ppLeft = 5 - this.ppUsed(move, pokemon);
