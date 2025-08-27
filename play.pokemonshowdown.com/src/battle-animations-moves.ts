@@ -5820,6 +5820,12 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	carniplant: {
+		anim(scene, [attacker, defender]) {
+			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+		},
+	},
 	superfang: {
 		anim(scene, [attacker, defender]) {
 			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
@@ -37595,7 +37601,7 @@ BattleMoveAnims['charm'] = { anim: BattleMoveAnims['attract'].anim };
 BattleMoveAnims['flatter'] = { anim: BattleMoveAnims['attract'].anim };
 
 BattleMoveAnims['armthrust'] = { anim: BattleMoveAnims['smellingsalts'].anim };
-BattleMoveAnims['carniplante'] = { anim: BattleMoveAnims['superfang'].anim };
+
 BattleMoveAnims['phantomforce'] = {
 	anim: BattleMoveAnims['shadowforce'].anim,
 	prepareAnim: BattleMoveAnims['shadowforce'].prepareAnim,
@@ -37625,7 +37631,6 @@ BattleMoveAnims['hyperfang'] = { anim: BattleMoveAnims['superfang'].anim };
 BattleMoveAnims['barrage'] = { anim: BattleMoveAnims['magnetbomb'].anim };
 BattleMoveAnims['eggbomb'] = { anim: BattleMoveAnims['magnetbomb'].anim };
 BattleMoveAnims['spitup'] = { anim: BattleMoveAnims['magnetbomb'].anim };
-
 
 BattleMoveAnims['rollingkick'] = { anim: BattleMoveAnims['doublekick'].anim };
 BattleMoveAnims['triplekick'] = { anim: BattleMoveAnims['doublekick'].anim };
