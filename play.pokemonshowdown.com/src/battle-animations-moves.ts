@@ -5820,12 +5820,100 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	//mood moves will be here for some reasons
 	carniplant: {
 		anim(scene, [attacker, defender]) {
 			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+			scene.showEffect('energyball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				opacity: 0.6,
+				time: 300,
+			}, 'linear', 'explode');
+			scene.showEffect('energyball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 100,
+			}, {
+				x: defender.x + 10,
+				y: defender.y + 5,
+				z: defender.z,
+				opacity: 0.6,
+				time: 400,
+			}, 'ballistic2', 'explode');
+			scene.showEffect('energyball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 200,
+			}, {
+				x: defender.x - 10,
+				y: defender.y - 10,
+				z: defender.z,
+				opacity: 0.6,
+				time: 500,
+			}, 'ballistic2Under', 'explode');
+
+			scene.showEffect('feather', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 0.1,
+				time: 300,
+			}, 'linear', 'explode');
+			scene.showEffect('feather', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 100,
+			}, {
+				x: defender.x + 10,
+				y: defender.y + 5,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 0.1,
+				time: 400,
+			}, 'ballistic2', 'explode');
+			scene.showEffect('feather', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.6,
+				time: 200,
+			}, {
+				x: defender.x - 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 0.1,
+				time: 500,
+			}, 'ballistic2Under', 'explode');
 		},
 	},
+	//mood moves will end here for some reasons
 	superfang: {
 		anim(scene, [attacker, defender]) {
 			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
