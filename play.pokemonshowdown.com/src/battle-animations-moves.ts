@@ -37595,7 +37595,7 @@ BattleMoveAnims['charm'] = { anim: BattleMoveAnims['attract'].anim };
 BattleMoveAnims['flatter'] = { anim: BattleMoveAnims['attract'].anim };
 
 BattleMoveAnims['armthrust'] = { anim: BattleMoveAnims['smellingsalts'].anim };
-
+BattleMoveAnims['carniplante'] = { anim: BattleMoveAnims['superfang'].anim };
 BattleMoveAnims['phantomforce'] = {
 	anim: BattleMoveAnims['shadowforce'].anim,
 	prepareAnim: BattleMoveAnims['shadowforce'].prepareAnim,
@@ -37625,6 +37625,7 @@ BattleMoveAnims['hyperfang'] = { anim: BattleMoveAnims['superfang'].anim };
 BattleMoveAnims['barrage'] = { anim: BattleMoveAnims['magnetbomb'].anim };
 BattleMoveAnims['eggbomb'] = { anim: BattleMoveAnims['magnetbomb'].anim };
 BattleMoveAnims['spitup'] = { anim: BattleMoveAnims['magnetbomb'].anim };
+
 
 BattleMoveAnims['rollingkick'] = { anim: BattleMoveAnims['doublekick'].anim };
 BattleMoveAnims['triplekick'] = { anim: BattleMoveAnims['doublekick'].anim };
@@ -37812,5 +37813,5 @@ BattleMoveAnims['hydrosteam'] = { anim: BattleMoveAnims['steameruption'].anim };
 BattleMoveAnims['psyblade'] = { anim: BattleMoveAnims['psychocut'].anim };
 BattleMoveAnims['polarflare'] = { anim: BattleMoveAnims['torchsong'].anim };
 //mood place holders 
-BattleMoveAnims['carniplante'] = { anim: BattleMoveAnims['superfang'].anim };
+
 
