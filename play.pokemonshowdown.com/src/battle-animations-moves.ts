@@ -12940,18 +12940,23 @@ export const BattleMoveAnims: AnimTable = {
 	},
 	brainfreeze: {
 		anim(scene, [attacker, defender]) {
-			scene.showEffect('iceball', {
-				x: defender.x,
-				y: defender.y,
-				z: defender.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 450,
-			}, {
-				scale: 2,
-				opacity: 0,
-				time: 700,
-			}, 'linear');
+			let xstep = (defender.x - attacker.x) / 5;
+			let ystep = (defender.y - attacker.y) / 5;
+			let zstep = (defender.z - attacker.z) / 5;
+
+			for (let i = 0; i < 4; i++) {
+				scene.showEffect('icicle', {
+					x: attacker.x + xstep * (i + 1),
+					y: attacker.y + ystep * (i + 1),
+					z: attacker.z + zstep * (i + 1),
+					scale: 1.5,
+					opacity: 0.6,
+					time: 40 * i,
+				}, {
+					opacity: 0,
+					time: 40 * i + 600,
+				}, 'linear');
+			}
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
