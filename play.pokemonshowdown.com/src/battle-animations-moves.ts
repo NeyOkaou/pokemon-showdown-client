@@ -17195,7 +17195,7 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
-
+//test
 	drachetoxic: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('poisoncaltrop', {
