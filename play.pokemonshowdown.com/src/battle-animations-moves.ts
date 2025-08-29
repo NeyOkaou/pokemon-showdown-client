@@ -17196,7 +17196,7 @@ export const BattleMoveAnims: AnimTable = {
 		},
 	},
 
-	darchetoxic: {
+	drachetoxic: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#000000 20%, #b21fa6ff)', 2700, 0.4);
 			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-raindance.jpg')`, 700, 0.2, 2000);
