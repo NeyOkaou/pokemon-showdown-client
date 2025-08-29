@@ -17195,11 +17195,14 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
+
 	darchetoxic: {
-		anim: BattleOtherAnims.dance.anim,
-		scene.backgroundEffect('linear-gradient(#000066 20%, #8a74edff)', 2700, 0.4);
-		scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-raindance.jpg')`, 700, 0.2, 2000);
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#000000 20%, #b21fa6ff)', 2700, 0.4);
+			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-raindance.jpg')`, 700, 0.2, 2000);
+		}
 	},
+
 	ficklebeam: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('mistball', {
