@@ -17198,9 +17198,62 @@ export const BattleMoveAnims: AnimTable = {
 
 	drachetoxic: {
 		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect('linear-gradient(#000000 20%, #b21fa6ff)', 2700, 0.4);
-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-raindance.jpg')`, 700, 0.2, 2000);
-		}
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+			}, {
+				x: defender.x + 30,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 75,
+			}, {
+				x: defender.x + 20,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 150,
+			}, {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 225,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+		},
 	},
 
 	ficklebeam: {
