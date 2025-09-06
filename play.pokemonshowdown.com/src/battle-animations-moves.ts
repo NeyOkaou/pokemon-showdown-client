@@ -17566,7 +17566,7 @@ export const BattleMoveAnims: AnimTable = {
 				defender.anim({
 					time: 75,
 				}, 'swing');
-			},
+			}
 
 			const defender = defenders[1] || defenders[0];
 			scene.backgroundEffect('#AA00AA', 700, 0.2);
