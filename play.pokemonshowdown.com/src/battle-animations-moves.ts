@@ -17195,68 +17195,6 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
-//test
-//fuck
-	drachetoxic: {
-		anim(scene, [attacker, defender]) {
-			scene.showEffect('poisoncaltrop', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.1,
-				opacity: 0.6,
-			}, {
-				x: defender.x + 30,
-				y: defender.y + 20,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.3,
-			}, 'ballistic', 'explode');
-			scene.showEffect('poisoncaltrop', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.1,
-				opacity: 0.6,
-				time: 75,
-			}, {
-				x: defender.x + 20,
-				y: defender.y - 20,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.3,
-			}, 'ballistic', 'explode');
-			scene.showEffect('poisoncaltrop', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.1,
-				opacity: 0.6,
-				time: 150,
-			}, {
-				x: defender.x - 30,
-				y: defender.y,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.3,
-			}, 'ballistic', 'explode');
-			scene.showEffect('poisoncaltrop', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.1,
-				opacity: 0.6,
-				time: 225,
-			}, {
-				x: defender.x - 10,
-				y: defender.y + 5,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.3,
-			}, 'ballistic', 'explode');
-		},
-	},
-
 	ficklebeam: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('mistball', {
@@ -17369,6 +17307,65 @@ export const BattleMoveAnims: AnimTable = {
 				opacity: 0.6,
 				time: 800,
 			}, 'linear', 'explode');
+		},
+	},
+	drachetoxic: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+			}, {
+				x: defender.x + 30,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 75,
+			}, {
+				x: defender.x + 20,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 150,
+			}, {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
+			scene.showEffect('poisoncaltrop', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.6,
+				time: 225,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+			}, 'ballistic', 'explode');
 		},
 	},
 	flamethrower: {
