@@ -38413,6 +38413,7 @@ BattleMoveAnims['phantomforce'] = {
 	prepareAnim: BattleMoveAnims['shadowforce'].prepareAnim,
 };
 BattleMoveAnims['shadowstrike'] = { anim: BattleMoveAnims['shadowforce'].anim };
+BattleMoveAnims['soulblast'] = { anim: BattleMoveAnims['shadowforce'].anim };
 
 BattleMoveAnims['smackdown'] = { anim: BattleMoveAnims['rockblast'].anim };
 
