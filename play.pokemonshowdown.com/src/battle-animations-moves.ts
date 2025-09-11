@@ -38295,6 +38295,7 @@ BattleMoveAnims['hornattack'] = { anim: BattleMoveAnims['megahorn'].anim };
 BattleMoveAnims['lunge'] = { anim: BattleMoveAnims['megahorn'].anim };
 
 BattleMoveAnims['constrict'] = { anim: BattleMoveAnims['bind'].anim };
+BattleMoveAnims['bondage'] = { anim: BattleMoveAnims['bind'].anim };
 BattleMoveAnims['wrap'] = { anim: BattleMoveAnims['bind'].anim };
 
 BattleMoveAnims['lowsweep'] = { anim: BattleMoveAnims['lowkick'].anim };
