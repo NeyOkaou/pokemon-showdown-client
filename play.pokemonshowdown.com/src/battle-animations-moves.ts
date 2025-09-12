@@ -38592,6 +38592,7 @@ BattleMoveAnims['headlongrush'] = {
 		BattleMoveAnims['earthpower'].anim(scene, [attacker, defender]);
 	},
 };
+BattleMoveAnims['baddybad'] = { anim: BattleMoveAnims['blackholeeclipse'].anim };
 BattleMoveAnims['hyperdrill'] = { anim: BattleMoveAnims['drillrun'].anim };
 BattleMoveAnims['kowtowcleave'] = { anim: BattleMoveAnims['nightslash'].anim };
 BattleMoveAnims['lastrespects'] = { anim: BattleMoveAnims['memento'].anim };
