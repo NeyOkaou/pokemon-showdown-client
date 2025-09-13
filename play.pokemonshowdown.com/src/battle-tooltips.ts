@@ -2128,6 +2128,9 @@ export class BattleTooltips {
 		if (move.flags['bite']) {
 			value.abilityModify(1.5, "Strong Jaw");
 		}
+		if (move.flags['heal']) {
+			value.abilityModify(1.3, "Vampire");
+		}
 		if (value.value <= 60) {
 			value.abilityModify(1.5, "Technician");
 		}
