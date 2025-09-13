@@ -6548,6 +6548,23 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	succubykiss: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('heart', {
+				x: defender.leftof(-20),
+				y: defender.y + 15,
+				z: defender.z,
+				scale: 3,
+				opacity: 0.5,
+				time: 450,
+			}, {
+				scale: 4,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+		},
+	},
 	slam: {
 		anim: BattleOtherAnims.contactattack.anim,
 	},
