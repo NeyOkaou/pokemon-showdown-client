@@ -5754,45 +5754,144 @@ export const BattleMoveAnims: AnimTable = {
 	},
 	multiattack: {
 		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect('#000000', 1100, 0.3);
 			scene.showEffect('flareball', {
 				x: attacker.x,
-				y: attacker.y,
+				y: attacker.y + 45,
 				z: attacker.z,
-				scale: 1,
-				opacity: 0.5,
+				scale: 0,
+				opacity: 0.2,
 			}, {
-				scale: 2,
-				opacity: 0,
-				time: 300,
-			}, 'decel');
-			scene.showEffect('rightslash', {
-				x: defender.x + 5,
-				y: defender.y + 20,
+				scale: 0.5,
+				opacity: 0.6,
+				time: 400,
+			}, 'decel', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x - 45,
+				y: attacker.y - 20,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.2,
+				time: 100,
+			}, {
+				scale: 0.5,
+				opacity: 0.6,
+				time: 500,
+			}, 'decel', 'fade');
+			scene.showEffect('electroball', {
+				x: attacker.x + 45,
+				y: attacker.y - 20,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.2,
+				time: 200,
+			}, {
+				scale: 0.5,
+				opacity: 0.6,
+				time: 600,
+			}, 'decel', 'fade');
+
+			scene.showEffect('flareball', {
+				x: attacker.x,
+				y: attacker.y + 45,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.6,
+				time: 400,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.behind(5),
+				opacity: 0.8,
+				time: 700,
+			}, 'accel', 'explode');
+			scene.showEffect('electroball', {
+				x: attacker.x - 45,
+				y: attacker.y - 20,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.6,
+				time: 500,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.behind(5),
+				opacity: 0.8,
+				time: 800,
+			}, 'accel', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x + 45,
+				y: attacker.y - 20,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.6,
+				time: 600,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.behind(5),
+				opacity: 0.8,
+				time: 900,
+			}, 'accel', 'explode');
+
+			scene.showEffect('fireball', {
+				x: defender.x - 15,
+				y: defender.y,
 				z: defender.z,
-				scale: 1,
-				opacity: 1,
+				scale: 0.5,
+				opacity: 0.8,
+				time: 600,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+			scene.showEffect('lightning', {
+				x: defender.x + 15,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.8,
+				time: 700,
+			}, {
+				scale: 5,
+				opacity: 0,
+				time: 1000,
+			}, 'linear');
+			scene.showEffect('icicle', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.8,
 				time: 800,
 			}, {
 				scale: 3,
 				opacity: 0,
 				time: 1100,
-			}, 'linear', 'fade');
-			scene.showEffect('rightslash', {
-				x: defender.x - 5,
-				y: defender.y - 20,
-				z: defender.z,
-				scale: 1,
-				opacity: 1,
-				time: 800,
-			}, {
-				scale: 3,
-				opacity: 0,
-				time: 1100,
-			}, 'linear', 'fade');
-			attacker.delay(300);
-			defender.delay(300);
-			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+			}, 'linear');
+
+			defender.delay(675);
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(5),
+				time: 75,
+			}, 'swing');
+			defender.anim({
+				time: 150,
+			}, 'swing');
 		},
 	},
 	holdback: {
