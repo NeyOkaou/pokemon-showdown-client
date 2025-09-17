@@ -13056,7 +13056,7 @@ export const BattleMoveAnims: AnimTable = {
 	},
 	spellcard: {
 		anim(scene, [attacker]) {
-			scene.showEffect('explode', {
+			scene.showEffect('iceball', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -13069,7 +13069,7 @@ export const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 400,
 			}, 'linear');
-			scene.showEffect('explode', {
+			scene.showEffect('iceball', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -13082,7 +13082,7 @@ export const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 600,
 			}, 'linear');
-			scene.showEffect('explode', {
+			scene.showEffect('iceball', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
