@@ -13055,46 +13055,95 @@ export const BattleMoveAnims: AnimTable = {
 		},
 	},
 	spellcard: {
-		anim(scene, [attacker]) {
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
+		lusterpurge: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#ffffff', 600, 0.6);
+			scene.showEffect('wisp', {
+				x: attacker.leftof(-10),
+				y: attacker.y + 10,
 				z: attacker.z,
-				scale: 0,
+				scale: 0.1,
 				opacity: 0.5,
-				time: 0,
 			}, {
-				z: attacker.behind(-50),
-				scale: 7,
+				scale: 15,
+				opacity: 0.8,
+				time: 500,
+			}, 'linear', 'fade');
+			scene.showEffect('impact', {
+				x: defender.x - 25,
+				y: defender.y,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 175,
+			}, {
+				scale: 1,
 				opacity: 0,
-				time: 400,
+				time: 375,
 			}, 'linear');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 150,
+			scene.showEffect('impact', {
+				x: defender.x + 25,
+				y: defender.y - 5,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 300,
 			}, {
-				z: attacker.behind(-50),
-				scale: 7,
+				scale: 1,
+				opacity: 0,
+				time: 500,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x - 25,
+				y: defender.y + 10,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 400,
+			}, {
+				scale: 1,
 				opacity: 0,
 				time: 600,
 			}, 'linear');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 300,
+			scene.showEffect('impact', {
+				x: defender.x + 2,
+				y: defender.y + 5,
+				z: defender.behind(5),
+				scale: 1,
+				opacity: 0.2,
+				time: 500,
 			}, {
-				z: attacker.behind(-50),
-				scale: 7,
+				scale: 1.25,
 				opacity: 0,
-				time: 800,
+				time: 700,
 			}, 'linear');
+
+			attacker.anim({
+				opacity: 0,
+				time: 75,
+			});
+			attacker.delay(500);
+			attacker.anim({
+				opacity: 1,
+				time: 100,
+			});
+			defender.delay(200);
+			defender.anim({
+				x: defender.x - 30,
+				time: 75,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x,
+				time: 100,
+			});
 		},
 	},
 	brainfreeze: {
