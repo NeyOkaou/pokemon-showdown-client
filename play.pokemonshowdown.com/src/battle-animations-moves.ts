@@ -1351,89 +1351,6 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
-	spellcard: {
-		anim(scene, [attacker]) {
-			scene.backgroundEffect('#ffffff', 600, 0.6);
-			scene.showEffect('wisp', {
-				x: attacker.leftof(-10),
-				y: attacker.y + 10,
-				z: attacker.z,
-				scale: 0.1,
-				opacity: 0.8,
-			}, {
-				scale: 15,
-				opacity: 0.8,
-				time: 500,
-			}, 'linear', 'fade');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 0,
-			}, {
-				z: attacker.behind(-50),
-				scale: 7,
-				opacity: 0,
-				time: 400,
-			}, 'linear');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 150,
-			}, {
-				z: attacker.behind(-50),
-				scale: 7,
-				opacity: 0,
-				time: 600,
-			}, 'linear');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-				time: 300,
-			}, {
-				z: attacker.behind(-50),
-				scale: 7,
-				opacity: 0,
-				time: 800,
-			}, 'linear');
-			scene.showEffect('electroball', {
-					x: attacker.x,
-					y: attacker.y,
-					z: attacker.z,
-					scale: 0.5,
-					opacity: 1,
-				}, {
-					x: attacker.x + 240 * xf[i],
-					y: attacker.y,
-					z: attacker.z + 137 * yf[i],
-					scale: 1,
-					opacity: 0.5,
-					time: 800,
-				}, 'accel', 'fade');
-				scene.showEffect('electroball', {
-					x: attacker.x,
-					y: attacker.y,
-					z: attacker.z,
-					scale: 0.5,
-					opacity: 1,
-				}, {
-					x: attacker.x + 339 * xf2[i],
-					y: attacker.y,
-					z: attacker.z + 194 * yf2[i],
-					scale: 1,
-					opacity: 0.5,
-					time: 800,
-				}, 'accel', 'fade');
-		},
-	},
 	tailwind: {
 		anim(scene, [attacker]) {
 			scene.showEffect('iceball', {
@@ -15229,6 +15146,49 @@ export const BattleMoveAnims: AnimTable = {
 				time: 600,
 			}, 'linear');
 			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				z: attacker.behind(-50),
+				scale: 7,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+		},
+	},
+	spellcard: {
+		anim(scene, [attacker]) {
+			scene.showEffect('explode', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 0,
+			}, {
+				z: attacker.behind(-50),
+				scale: 7,
+				opacity: 0,
+				time: 400,
+			}, 'linear');
+			scene.showEffect('explode', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 150,
+			}, {
+				z: attacker.behind(-50),
+				scale: 7,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('explode', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
