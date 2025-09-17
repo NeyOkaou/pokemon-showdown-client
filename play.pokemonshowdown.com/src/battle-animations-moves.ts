@@ -13055,7 +13055,6 @@ export const BattleMoveAnims: AnimTable = {
 		},
 	},
 	spellcard: {
-		lusterpurge: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#ffffff', 600, 0.6);
 			scene.showEffect('wisp', {
@@ -13146,6 +13145,7 @@ export const BattleMoveAnims: AnimTable = {
 			});
 		},
 	},
+
 	brainfreeze: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('iceball', {
