@@ -13055,20 +13055,46 @@ export const BattleMoveAnims: AnimTable = {
 		},
 	},
 	spellcard: {
-		anim(scene, [attacker, defender]) {
-			scene.showEffect('mistball', {
-				x: defender.x,
-				y: defender.y,
-				z: defender.z,
+		anim(scene, [attacker]) {
+			scene.showEffect('explode', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
 				scale: 0,
 				opacity: 0.5,
-				time: 450,
+				time: 0,
 			}, {
-				scale: 2,
+				z: attacker.behind(-50),
+				scale: 7,
 				opacity: 0,
-				time: 700,
+				time: 400,
 			}, 'linear');
-			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+			scene.showEffect('explode', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 150,
+			}, {
+				z: attacker.behind(-50),
+				scale: 7,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('explode', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				z: attacker.behind(-50),
+				scale: 7,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
 		},
 	},
 	brainfreeze: {
