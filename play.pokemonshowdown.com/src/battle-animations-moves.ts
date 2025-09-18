@@ -3460,6 +3460,32 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	oilup: {
+		anim(scene, [attacker]) {
+			scene.showEffect('gear', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+			}, {
+				scale: 1.5,
+				opacity: 0,
+				time: 500,
+			}, 'linear', 'fade');
+			scene.showEffect('rainbow', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 1,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 500,
+			}, 'linear', 'fade');
+		},
+	},
 	recycle: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
