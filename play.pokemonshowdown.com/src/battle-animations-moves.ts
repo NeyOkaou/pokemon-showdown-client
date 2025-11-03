@@ -33684,7 +33684,8 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
-	baddybad: {
+
+	blackholeeclipse: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 2500, 0.6);
 			scene.showEffect('wisp', {
@@ -33855,6 +33856,8 @@ export const BattleMoveAnims: AnimTable = {
 			});
 		},
 	},
+
+	
 	blackholeeclipse: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 2500, 0.6);
@@ -38955,6 +38958,7 @@ BattleMoveAnims['gmaxcentiferno'] = BattleMoveAnims['infernooverdrive'];
 BattleMoveAnims['gmaxfireball'] = BattleMoveAnims['infernooverdrive'];
 BattleMoveAnims['maxairstream'] = BattleMoveAnims['supersonicskystrike'];
 BattleMoveAnims['maxphantasm'] = BattleMoveAnims['neverendingnightmare'];
+BattleMoveAnims['baddybad'] = BattleMoveAnims['neverendingnightmare'];
 BattleMoveAnims['maxovergrowth'] = BattleMoveAnims['bloomdoom'];
 BattleMoveAnims['gmaxvinelash'] = BattleMoveAnims['bloomdoom'];
 BattleMoveAnims['gmaxdrumsolo'] = BattleMoveAnims['bloomdoom'];
