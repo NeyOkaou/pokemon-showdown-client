@@ -34188,6 +34188,164 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+		baddybad: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 1500, 0.6);
+			let xstep = (defender.x + 200 - defender.x) / 5;
+			let ystep = (defender.x - 200 - defender.x) / 5;
+			let zstep = defender.z / 5;
+
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x - 200 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 0,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x + 150 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x - 150 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 100,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x + 100 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x - 100 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 1.2,
+					opacity: 1,
+					time: 40 * i + 200,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x + 50 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x - 50 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 300,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x - 50 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x + 50 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 1.2,
+					opacity: 1,
+					time: 40 * i + 400,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x - 100 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x + 100 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 500,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x - 150 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x + 150 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 600,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			xstep = (defender.x - 200 - defender.x) / 5;
+			for (let i = 0; i < 5; i++) {
+				scene.showEffect('poisonwisp', {
+					x: defender.x + 200 + xstep * (i + 1),
+					y: (defender.y + 200) + ystep * (i + 1),
+					z: defender.z + zstep * (i + 1),
+					scale: 0.6,
+					opacity: 0.7,
+					time: 40 * i + 700,
+				}, {
+					opacity: 0,
+					time: 50 * i + 1000,
+				}, 'linear');
+			}
+			scene.showEffect('shadowball', {
+				x: defender.x,
+				y: defender.y - 60,
+				z: defender.z,
+				scale: 1,
+				xscale: 3,
+				opacity: 0.5,
+				time: 200,
+			}, {
+				scale: 3,
+				xscale: 8,
+				opacity: 0.1,
+				time: 1300,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowball', {
+				x: defender.x,
+				y: defender.y - 30,
+				z: defender.z,
+				opacity: 1,
+				scale: 2,
+				time: 200,
+			}, {
+				scale: 2.5,
+				opacity: 0,
+				time: 1500,
+			}, 'linear', 'fade');
+			scene.showEffect('poisonwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				opacity: 0.7,
+				scale: 3,
+				time: 200,
+			}, {
+				scale: 9,
+				opacity: 1,
+				time: 1500,
+			}, 'linear', 'fade');
+		},
+	},
 	neverendingnightmare: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 1500, 0.6);
@@ -38958,7 +39116,6 @@ BattleMoveAnims['gmaxcentiferno'] = BattleMoveAnims['infernooverdrive'];
 BattleMoveAnims['gmaxfireball'] = BattleMoveAnims['infernooverdrive'];
 BattleMoveAnims['maxairstream'] = BattleMoveAnims['supersonicskystrike'];
 BattleMoveAnims['maxphantasm'] = BattleMoveAnims['neverendingnightmare'];
-BattleMoveAnims['baddybad'] = BattleMoveAnims['neverendingnightmare'];
 BattleMoveAnims['maxovergrowth'] = BattleMoveAnims['bloomdoom'];
 BattleMoveAnims['gmaxvinelash'] = BattleMoveAnims['bloomdoom'];
 BattleMoveAnims['gmaxdrumsolo'] = BattleMoveAnims['bloomdoom'];
