@@ -33684,177 +33684,7 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
-	baddybad: {
-		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 2500, 0.6);
-			scene.showEffect('wisp', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 1,
-				opacity: 0.2,
-				time: 0,
-			}, {
-				scale: 2,
-				opacity: 0.5,
-				time: 600,
-			}, 'linear', 'explode');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 1,
-				opacity: 0.1,
-				time: 0,
-			}, {
-				scale: 0,
-				opacity: 0.5,
-				time: 400,
-			}, 'accel');
-			scene.showEffect('iceball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 1,
-				opacity: 0.1,
-				time: 200,
-			}, {
-				scale: 0,
-				opacity: 0.5,
-				time: 600,
-			}, 'accel');
-			scene.showEffect('shadowball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 1,
-				opacity: 0.1,
-				time: 550,
-			}, {
-				scale: 0.7,
-				opacity: 0.5,
-				time: 900,
-			}, 'decel', 'fade');
-			scene.showEffect('poisonwisp', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 2,
-				opacity: 0.1,
-				time: 550,
-			}, {
-				scale: 1.5,
-				opacity: 1,
-				time: 900,
-			}, 'decel', 'fade');
-
-			scene.showEffect('shadowball', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.7,
-				opacity: 0.5,
-				time: 900,
-			}, {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				opacity: 0.7,
-				scale: 2,
-				time: 1500,
-			}, 'accel', 'explode');
-			scene.showEffect('poisonwisp', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 1.5,
-				opacity: 1,
-				time: 900,
-			}, {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 3,
-				time: 1500,
-			}, 'accel', 'explode');
-			scene.showEffect('shadowball', {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.7,
-				time: 1500,
-			}, {
-				scale: 2,
-				time: 2200,
-			}, 'linear', 'fade');
-			scene.showEffect('poisonwisp', {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 4,
-				opacity: 1,
-				time: 1500,
-			}, {
-				scale: 4.2,
-				time: 2200,
-			}, 'linear', 'fade');
-
-			scene.showEffect('flareball', {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.1,
-				time: 1600,
-			}, {
-				scale: 3,
-				opacity: 0,
-				time: 1900,
-			}, 'linear');
-			scene.showEffect('flareball', {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 1,
-				opacity: 0.1,
-				time: 1900,
-			}, {
-				scale: 3,
-				opacity: 0,
-				time: 2200,
-			}, 'linear');
-			scene.showEffect('poisonwisp', {
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.z,
-				scale: 4.2,
-				opacity: 0.5,
-				time: 2200,
-			}, {
-				scale: 0,
-				time: 2500,
-			}, 'accel');
-
-			defender.delay(1500);
-			defender.anim({
-				y: defender.y + 50,
-				xscale: 0,
-				yscale: 0,
-				opacity: 0,
-				time: 400,
-			}, 'accel');
-			defender.delay(1500);
-			defender.anim({
-				y: defender.y,
-				opacity: 0,
-				time: 1,
-			});
-			defender.anim({
-				time: 400,
-			});
-		},
-	},
+	
 	blackholeeclipse: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#440044 30%, #000000', 2500, 0.6);
@@ -38675,6 +38505,9 @@ export const BattleMoveAnims: AnimTable = {
 };
 
 // placeholder animations
+BattleMoveAnims['peekaboo'] = { anim: BattleMoveAnims['bulkup'].anim };
+BattleMoveAnims['soulblast'] = { anim: BattleMoveAnims['bulkup'].anim };
+BattleMoveAnims['baddybad'] = { anim: BattleMoveAnims['bulkup'].anim };
 BattleMoveAnims['torment'] = { anim: BattleMoveAnims['swagger'].anim };
 
 BattleMoveAnims['mefirst'] = { anim: BattleMoveAnims['mimic'].anim };
@@ -38865,7 +38698,6 @@ BattleMoveAnims['jumpscare'] = {
 	prepareAnim: BattleMoveAnims['shadowforce'].prepareAnim,
 };
 BattleMoveAnims['shadowstrike'] = { anim: BattleMoveAnims['shadowforce'].anim };
-BattleMoveAnims['soulblast'] = { anim: BattleMoveAnims['shadowforce'].anim };
 
 BattleMoveAnims['smackdown'] = { anim: BattleMoveAnims['rockblast'].anim };
 
