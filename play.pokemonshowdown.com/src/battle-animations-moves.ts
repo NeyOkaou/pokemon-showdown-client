@@ -38579,7 +38579,7 @@ export const BattleMoveAnims: AnimTable = {
 
 // placeholder animations
 //BattleMoveAnims['soulblast'] = { anim: BattleMoveAnims['bulkup'].anim };
-BattleMoveAnims['baddybad'] = { anim: BattleMoveAnims['bulkup'].anim };
+BattleMoveAnims['baddybad'] = { anim: BattleMoveAnims['blackholeeclipse'].anim };
 BattleMoveAnims['torment'] = { anim: BattleMoveAnims['swagger'].anim };
 
 BattleMoveAnims['mefirst'] = { anim: BattleMoveAnims['mimic'].anim };
