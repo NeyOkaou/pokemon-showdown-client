@@ -635,9 +635,20 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	auberjaw: 1512 + 84,
 	limacide: 1512 + 85,
 	glaugoon: 1512 + 86,
+	daemonix: 1512 + 87,
+	achaethena: 1512 + 88,
+	//beelzeros: 1512 + 89,
+	//sleepompik: 1512 + 90,
+	//ominousleh: 1512 + 91,
+	mandelman: 1512 + 92,
+	//melodie: 1512 + 93,
+	melodrame: 1512 + 94,
+	lumini: 1512 + 95,
+	parademise: 1512 + 96,
 	zapek: 1512 + 97,
 	pikorage: 1512 + 98,
 	cockalypse: 1512 + 99, 
+	phantasm: 1512 + 100, 
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
