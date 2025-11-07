@@ -633,6 +633,8 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	figgon: 1512 + 82,
 	saladrake: 1512 + 83,
 	auberjaw: 1512 + 84,
+	limacide: 1512 + 85,
+	glaugoon: 1512 + 86,
 	zapek: 1512 + 97,
 	pikorage: 1512 + 98,
 	cockalypse: 1512 + 99, 
