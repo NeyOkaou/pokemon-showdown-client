@@ -627,6 +627,7 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	chuggon: 1512 + 76,
 	draggalong: 1512 + 77,
 	ramnarok: 1512 + 78,
+	puyotan: 1512 + 78,
 	ramnarokradiant: 1512 + 79,
 };
 
