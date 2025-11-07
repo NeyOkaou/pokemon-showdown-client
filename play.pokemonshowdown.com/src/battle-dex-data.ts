@@ -629,6 +629,7 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	ramnarok: 1512 + 78,
 	puyotan: 1512 + 78,
 	ramnarokradiant: 1512 + 79,
+	zapek: 1512 +97,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
