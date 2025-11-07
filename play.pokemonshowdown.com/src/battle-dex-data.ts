@@ -626,10 +626,16 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	shox: 1512 + 75,
 	chuggon: 1512 + 76,
 	draggalong: 1512 + 77,
-	ramnarok: 1512 + 78,
 	puyotan: 1512 + 78,
-	ramnarokradiant: 1512 + 79,
-	zapek: 1512 +97,
+	gesticot: 1512 + 79,
+	terrakami: 1512 + 80,
+	gyaoon: 1512 + 81,
+	figgon: 1512 + 82,
+	saladrake: 1512 + 83,
+	auberjaw: 1512 + 84,
+	zapek: 1512 + 97,
+	pikorage: 1512 + 98,
+	cockalypse: 1512 + 99, 
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
