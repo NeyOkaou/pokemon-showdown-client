@@ -649,6 +649,15 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	pikorage: 1512 + 98,
 	cockalypse: 1512 + 99, 
 	phantasm: 1512 + 100, 
+	galemimi: 1512 + 101, 
+	galem: 1512 + 102,
+	//wardelith : 1512 + 103,  
+	ostenssy: 1512 + 104, 
+	rancossor: 1512 + 105, 
+	mossemeros: 1512 + 106, 
+	gralibri: 1512 + 107,
+	stalibri: 1512 + 108,
+	zardopium: 1512 + 109,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
