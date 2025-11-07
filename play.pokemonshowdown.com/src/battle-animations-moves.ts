@@ -15803,6 +15803,27 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'decel', 'fade');
 		},
 	},
+	peekaboo: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#550000', 250, 0.3);
+			scene.backgroundEffect('#000000', 250, 0.2, 400);
+			scene.showEffect(attacker.sp, {
+				x: attacker.x,
+				y: attacker.y + 30,
+				z: attacker.z,
+				scale: 3,
+				opacity: 0.3,
+				time: 50,
+			}, {
+				x: defender.x,
+				y: defender.y + 35,
+				z: defender.z,
+				scale: 3.5,
+				opacity: 0.1,
+				time: 600,
+			}, 'accel', 'fade');
+		},
+	},
 	nightshade: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#550000', 250, 0.3);
@@ -38505,7 +38526,6 @@ export const BattleMoveAnims: AnimTable = {
 };
 
 // placeholder animations
-BattleMoveAnims['peekaboo'] = { anim: BattleMoveAnims['bulkup'].anim };
 BattleMoveAnims['soulblast'] = { anim: BattleMoveAnims['bulkup'].anim };
 BattleMoveAnims['baddybad'] = { anim: BattleMoveAnims['bulkup'].anim };
 BattleMoveAnims['torment'] = { anim: BattleMoveAnims['swagger'].anim };
