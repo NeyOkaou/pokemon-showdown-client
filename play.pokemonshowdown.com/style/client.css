@@ -2457,6 +2457,7 @@ p.or:after {
 }
 .setcell-pokemon {
 	margin-top: 0;
+	image-rendering: pixelated;
 }
 .setcell-details {
 	height: 60px;
