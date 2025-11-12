@@ -2453,6 +2453,7 @@ p.or:after {
 .setcell-sprite {
 	height: 82px;
 	padding: 1px;
+	image-rendering: pixelated;
 }
 .setcell-pokemon {
 	margin-top: 0;
