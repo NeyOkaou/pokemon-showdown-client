@@ -92,7 +92,7 @@ class PSPrefs extends PSStreamModel<string | null> {
 
 	/* Graphics Preferences */
 	noanim: boolean | null = null;
-	bwgfx: boolean | null = null;
+	bwgfx: boolean | null = true;
 	nopastgens: boolean | null = null;
 
 	/* Chat Preferences */
