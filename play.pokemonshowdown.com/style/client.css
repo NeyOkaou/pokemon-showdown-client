@@ -2450,11 +2450,11 @@ p.or:after {
 .setcell-typeicons img {
 	margin-left: 1px;
 }
-.setcell-sprite img {
+.setcell-sprite {
 	height: 82px;
 	padding: 1px;
 }
-.setcell-pokemon img {
+.setcell-pokemon {
 	margin-top: 0;
 }
 .setcell-details {
