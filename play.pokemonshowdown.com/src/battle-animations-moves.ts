@@ -7436,6 +7436,59 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	breaktheice: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('rightchop', {
+				x: defender.leftof(30),
+				y: defender.y + 50,
+				z: defender.behind(-10),
+				scale: 0.6,
+				opacity: 1,
+				time: 475,
+			}, {
+				y: defender.y - 20,
+				opacity: 0.5,
+				time: 550,
+			}, 'linear', 'fade');
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+			let xf = [1, -1, 1, -1];
+			let yf = [1, -1, -1, 1];
+			let xf2 = [1, 0, -1, 0];
+			let yf2 = [0, 1, 0, -1];
+
+			for (let i = 0; i < 4; i++) {
+				scene.showEffect('icicle', {
+					x: attacker.x,
+					y: attacker.y,
+					z: attacker.z,
+					scale: 0.5,
+					opacity: 1,
+				}, {
+					x: attacker.x + 240 * xf[i],
+					y: attacker.y,
+					z: attacker.z + 137 * yf[i],
+					scale: 1,
+					opacity: 0.5,
+					time: 800,
+				}, 'accel');
+				scene.showEffect('icicle', {
+					x: attacker.x,
+					y: attacker.y,
+					z: attacker.z,
+					scale: 0.5,
+					opacity: 1,
+				}, {
+					x: attacker.x + 339 * xf2[i],
+					y: attacker.y,
+					z: attacker.z + 194 * yf2[i],
+					scale: 1,
+					opacity: 0.5,
+					time: 800,
+				}, 'accel');
+			}
+		},
+	},
+
 	crosschop: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('rightslash', {
@@ -38744,6 +38797,7 @@ BattleMoveAnims['telekinesis'] = { anim: BattleMoveAnims['kinesis'].anim };
 BattleMoveAnims['foulplay'] = { anim: BattleMoveAnims['psyshock'].anim };
 BattleMoveAnims['psywave'] = { anim: BattleMoveAnims['psybeam'].anim };
 BattleMoveAnims['extrasensory'] = { anim: BattleMoveAnims['psychic'].anim };
+BattleMoveAnims['thinkfast'] = { anim: BattleMoveAnims['psychic'].anim };
 BattleMoveAnims['confusion'] = { anim: BattleMoveAnims['psychic'].anim };
 BattleMoveAnims['miracleeye'] = { anim: BattleMoveAnims['mindreader'].anim };
 BattleMoveAnims['futuresight'] = { anim: BattleMoveAnims['doomdesire'].anim };
