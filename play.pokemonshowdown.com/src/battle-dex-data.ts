@@ -658,6 +658,18 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	gralibri: 1512 + 107,
 	stalibri: 1512 + 108,
 	zardopium: 1512 + 109,
+	apprenpti:1512 + 110,
+	reptueur:1512 + 111,
+	gardilisk:1512 + 112,
+	scriptile:1512 + 113,
+	pythagon:1512 + 114,
+	invocamon:1512 + 115,
+	dracoton:1512 + 116,
+	tundragon:1512 + 117,
+	celestial:1512 + 118,
+	//yetidiot: 1512 + 119,
+	glacynapse: 1512 + 120,
+
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
