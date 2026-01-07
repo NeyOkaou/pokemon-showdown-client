@@ -667,7 +667,7 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	dracoton:1512 + 116,
 	tundragon:1512 + 117,
 	celestial:1512 + 118,
-	//yetidiot: 1512 + 119,
+	yetidiot: 1512 + 119,
 	glacynapse: 1512 + 120,
 
 };
