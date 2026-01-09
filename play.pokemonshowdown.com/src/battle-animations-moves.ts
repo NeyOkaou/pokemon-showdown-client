@@ -14716,6 +14716,75 @@ export const BattleMoveAnims: AnimTable = {
 			}
 		},
 	},
+	starduststorm: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#000000', 900, 0.6);
+
+			for (let i = 0; i < 4; i++) {
+				scene.showEffect('rock2', {
+					x: defender.x + 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 0.2,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x - 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.4,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('rock1', {
+					x: defender.x - 50,
+					y: defender.y + 35,
+					z: defender.z,
+					scale: 0.2,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x + 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.4,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('rock2', {
+					x: defender.x + 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.2,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x - 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 0.4,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('rock1', {
+					x: defender.x - 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.2,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x + 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 0.4,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+			}
+		},
+	},
+
 	springtidestorm: {
 		anim(scene, [attacker, ...defenders]) {
 			scene.backgroundEffect('#FF99FF', 1000, 0.3);
