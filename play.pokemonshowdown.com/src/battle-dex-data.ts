@@ -677,6 +677,8 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	yukigori: 1512 + 126,
 	plankteuy: 1512 + 127,
 	shroomalice: 1512 + 128,
+	jamush: 1512 + 129,
+	mycellum: 1512 + 130,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
