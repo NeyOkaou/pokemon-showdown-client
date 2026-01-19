@@ -637,11 +637,11 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	glaugoon: 1512 + 86,
 	daemonix: 1512 + 87,
 	achaethena: 1512 + 88,
-	//beelzeros: 1512 + 89,
-	//sleepompik: 1512 + 90,
-	//ominousleh: 1512 + 91,
+	beelzeros: 1512 + 89,
+	sleepompik: 1512 + 90,
+	ominousleh: 1512 + 91,
 	mandelman: 1512 + 92,
-	//melodie: 1512 + 93,
+	melodie: 1512 + 93,
 	melodrame: 1512 + 94,
 	lumini: 1512 + 95,
 	parademise: 1512 + 96,
@@ -669,7 +669,14 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	celestial:1512 + 118,
 	yetidiot: 1512 + 119,
 	glacynapse: 1512 + 120,
-
+	lilichen: 1512 + 121,
+	noblichen: 1512 + 122,
+	monarchen: 1512 + 123,
+	fukunny: 1512 + 124,
+	usagunny: 1512 + 125,
+	yukigori: 1512 + 126,
+	plankteuy: 1512 + 127,
+	shroomalice: 1512 + 128,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
