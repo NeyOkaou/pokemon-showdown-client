@@ -1368,7 +1368,7 @@ class BackgroundListPanel extends PSRoomPanel {
 				</button>
 				<button onClick={this.setBg} value="solidblue" class={option('solidblue')}>
 					<span class="bg" style="background: #344b6c"></span>{}
-					Solid blue
+					Test blue
 				</button>
 			</div>
 			<div style="clear: left"></div>
