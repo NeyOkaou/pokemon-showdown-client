@@ -348,8 +348,8 @@ loc);
 if(!loc.xscale&&loc.xscale!==0)loc.xscale=loc.scale;
 if(!loc.yscale&&loc.yscale!==0)loc.yscale=loc.scale;
 
-var left=310;
-var top=245;
+var left=210;
+var top=200;
 var scale=2.0*(loc.z/200);
 if(scale<0.1)scale=0.1;
 
