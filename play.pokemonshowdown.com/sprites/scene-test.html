@@ -379,42 +379,20 @@
 				'bg-gen4-water.png',
 			];
 			const BattleBackdropsFive = [
-				'bg-beach.png',
-				'bg-beachshore.png',
-				'bg-desert.png',
-				'bg-meadow.png',
-				'bg-thunderplains.png',
-				'bg-city.png',
-				'bg-earthycave.png',
-				'bg-mountain.png',
-				'bg-volcanocave.png',
-				'bg-dampcave.png',
-				'bg-forest.png',
-				'bg-river.png',
-				'bg-deepsea.png',
-				'bg-icecave.png',
-				'bg-route.png',
+				'bg-gen3.png',
+				'bg-gen3-cave.png',
+				'bg-gen3-ocean.png',
+				'bg-gen3-sand.png',
+				'bg-gen3-forest.png',
+				'bg-gen3-arena.png',
 			];
 			const BattleBackdrops = [
-				'bg-aquacordetown.jpg',
-				'bg-beach.jpg',
-				'bg-city.jpg',
-				'bg-dampcave.jpg',
-				'bg-darkbeach.jpg',
-				'bg-darkcity.jpg',
-				'bg-darkmeadow.jpg',
-				'bg-deepsea.jpg',
-				'bg-desert.jpg',
-				'bg-earthycave.jpg',
-				'bg-elite4drake.jpg',
-				'bg-forest.jpg',
-				'bg-icecave.jpg',
-				'bg-leaderwallace.jpg',
-				'bg-library.jpg',
-				'bg-meadow.jpg',
-				'bg-orasdesert.jpg',
-				'bg-orassea.jpg',
-				'bg-skypillar.jpg',
+				'bg-gen3.png',
+				'bg-gen3-cave.png',
+				'bg-gen3-ocean.png',
+				'bg-gen3-sand.png',
+				'bg-gen3-forest.png',
+				'bg-gen3-arena.png',
 			];
 
 			let bg;
@@ -423,7 +401,6 @@
 			else if (gen <= 3) bg = 'fx/' + sample(BattleBackdropsThree);
 			else if (gen <= 4) bg = 'fx/' + sample(BattleBackdropsFour);
 			else if (gen <= 5) bg = 'fx/' + sample(BattleBackdropsFive);
-			else if (gen === 9) bg = 'fx/' + sample(BattleBackdropsThree);
 			else bg = 'sprites/gen6bgs/' + sample(BattleBackdrops);
 
 			const style = `background-image:url(${Dex.resourcePrefix}${bg});display:block;opacity:0.8`;
