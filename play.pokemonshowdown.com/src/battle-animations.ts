@@ -349,7 +349,7 @@ export class BattleScene implements BattleSceneStub {
 		if (!loc.yscale && loc.yscale !== 0) loc.yscale = loc.scale;
 
 		let left = 210;
-		let top = 215;
+		let top = 210;
 		let scale = 2.0 - 0.5* ((loc.z!) / 200);
 		if (scale < 0.1) scale = 0.1;
 
@@ -363,7 +363,6 @@ export class BattleScene implements BattleSceneStub {
 		let hoffset = Math.floor((obj.h - (obj.y || 0) * 2) * scale * loc.yscale!);
 		left -= Math.floor(width / 2);
 		top -= Math.floor(hoffset / 2);
-		top -= 10;
 
 		let pos: JQuery.PlainObject = {
 			left,

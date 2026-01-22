@@ -349,7 +349,7 @@ if(!loc.xscale&&loc.xscale!==0)loc.xscale=loc.scale;
 if(!loc.yscale&&loc.yscale!==0)loc.yscale=loc.scale;
 
 var left=210;
-var top=213;
+var top=215;
 var scale=2.0-0.5*(loc.z/200);
 if(scale<0.1)scale=0.1;
 
