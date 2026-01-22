@@ -365,7 +365,7 @@ left-=Math.floor(width/2);
 top-=Math.floor(hoffset/2);
 
 if(obj.isBackSprite){
-top-=8;
+top-=100;
 }
 
 var pos={

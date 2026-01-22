@@ -363,10 +363,7 @@ export class BattleScene implements BattleSceneStub {
 		let hoffset = Math.floor((obj.h - (obj.y || 0) * 2) * scale * loc.yscale!);
 		left -= Math.floor(width / 2);
 		top -= Math.floor(hoffset / 2);
-		
-		if (obj.isBackSprite) {
-		    top -= 100;
-		}
+		top -= 10;
 
 		let pos: JQuery.PlainObject = {
 			left,
