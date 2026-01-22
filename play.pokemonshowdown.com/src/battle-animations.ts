@@ -2224,6 +2224,8 @@ export class PokemonSprite extends Sprite {
 			statbarOffset += this.isFrontSprite ? 20 : 1;
 		} else if (this.scene.gen <= 3) {
 			statbarOffset += this.isFrontSprite ? 30 : 5;
+		}else if  (this.scene.gen === 9) {
+                        statbarOffset += this.isFrontSprite ? 30 : 5;
 		} else if (this.scene.gen !== 5) {
 			statbarOffset += this.isFrontSprite ? 30 : 20;
 		}
