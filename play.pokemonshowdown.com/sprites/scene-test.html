@@ -420,9 +420,10 @@
 			let bg;
 			if (gen <= 1) bg = 'fx/bg-gen1.png';
 			else if (gen <= 2) bg = 'fx/bg-gen2.png';
-			else if (gen <= 3|| gen == 9) bg = 'fx/' + sample(BattleBackdropsThree);
+			else if (gen <= 3) bg = 'fx/' + sample(BattleBackdropsThree);
 			else if (gen <= 4) bg = 'fx/' + sample(BattleBackdropsFour);
 			else if (gen <= 5) bg = 'fx/' + sample(BattleBackdropsFive);
+			else if (gen === 9) bg = 'fx/' + sample(BattleBackdropsThree);
 			else bg = 'sprites/gen6bgs/' + sample(BattleBackdrops);
 
 			const style = `background-image:url(${Dex.resourcePrefix}${bg});display:block;opacity:0.8`;
