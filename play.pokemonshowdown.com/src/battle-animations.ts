@@ -350,7 +350,7 @@ export class BattleScene implements BattleSceneStub {
 
 		let left = 210;
 		let top = 245;
-		let scale = 10 - 0.5 * ((loc.z!) / 200);
+		let scale = 3 - 0.5 * ((loc.z!) / 200);
 		if (scale < 0.1) scale = 0.1;
 
 
