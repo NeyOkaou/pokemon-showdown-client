@@ -350,7 +350,7 @@ if(!loc.yscale&&loc.yscale!==0)loc.yscale=loc.scale;
 
 var left=210;
 var top=245;
-var scale=3-0.5*(loc.z/200);
+var scale=2.5-0.5*(loc.z/200);
 if(scale<0.1)scale=0.1;
 
 
