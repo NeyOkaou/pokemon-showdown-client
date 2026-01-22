@@ -357,36 +357,7 @@
 		}
 
 		function changeBackdrop(backdrop, gen) {
-			if (BACKDROP && BACKDROP.gen === gen) {
-				backdrop.style = BACKDROP.style;
-				return;
-			}
-			BACKDROP = gen;
-
 			const BattleBackdropsThree = [
-				'bg-gen3.png',
-				'bg-gen3-cave.png',
-				'bg-gen3-ocean.png',
-				'bg-gen3-sand.png',
-				'bg-gen3-forest.png',
-				'bg-gen3-arena.png',
-			];
-			const BattleBackdropsFour = [
-				'bg-gen4.png',
-				'bg-gen4-cave.png',
-				'bg-gen4-snow.png',
-				'bg-gen4-indoors.png',
-				'bg-gen4-water.png',
-			];
-			const BattleBackdropsFive = [
-				'bg-gen3.png',
-				'bg-gen3-cave.png',
-				'bg-gen3-ocean.png',
-				'bg-gen3-sand.png',
-				'bg-gen3-forest.png',
-				'bg-gen3-arena.png',
-			];
-			const BattleBackdrops = [
 				'bg-gen3.png',
 				'bg-gen3-cave.png',
 				'bg-gen3-ocean.png',
@@ -398,6 +369,7 @@
 			let bg;
 			if (gen <= 1) bg = 'fx/bg-gen1.png';
 			else if (gen <= 2) bg = 'fx/bg-gen2.png';
+<<<<<<< HEAD
 			else if (gen <= 3) bg = 'fx/' + sample(BattleBackdropsThree);
 			else if (gen <= 4) bg = 'fx/' + sample(BattleBackdropsFour);
 			else if (gen <= 5) bg = 'fx/' + sample(BattleBackdropsFive);
@@ -410,11 +382,16 @@
 >>>>>>> 897493d7d4f5006d6654cf46895f77de1b4f65d8
 			else bg = 'sprites/gen6bgs/' + sample(BattleBackdrops);
 >>>>>>> 92108c2b17e3053b6ae5261a105cc568a2b021a7
+=======
+			else if (gen <= 5) bg = 'fx/' + sample(BattleBackdropsThree); // gen 3 à 5 utilisent gen3
+			else bg = 'fx/' + sample(BattleBackdropsThree); // gen 6 à 9 aussi gen3
+>>>>>>> a873cb14dba2c118c7472178348a2c2573a79ab7
 
 			const style = `background-image:url(${Dex.resourcePrefix}${bg});display:block;opacity:0.8`;
 			backdrop.style = style;
 			BACKDROP = {gen, style};
 		}
+
 
 		function locToPos(loc, obj) {
 			loc = {
