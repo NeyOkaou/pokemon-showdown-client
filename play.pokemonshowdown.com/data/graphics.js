@@ -349,7 +349,7 @@ if(!loc.xscale&&loc.xscale!==0)loc.xscale=loc.scale;
 if(!loc.yscale&&loc.yscale!==0)loc.yscale=loc.scale;
 
 var left=210;
-var top=215;
+var top=210;
 var scale=2.0-0.5*(loc.z/200);
 if(scale<0.1)scale=0.1;
 
@@ -363,7 +363,6 @@ var height=Math.floor(obj.h*scale*loc.yscale);
 var hoffset=Math.floor((obj.h-(obj.y||0)*2)*scale*loc.yscale);
 left-=Math.floor(width/2);
 top-=Math.floor(hoffset/2);
-top-=10;
 
 var pos={
 left:left,
