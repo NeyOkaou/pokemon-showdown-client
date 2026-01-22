@@ -422,6 +422,7 @@
 			const moreActive = activeCount - 1;
 			let statbarOffset = 0;
 			let x = 0, y = 0;
+			if (gen === 9) gen = 3;
 			if (gen <= 4 && moreActive) {
 				x = (slot - 0.52) * (isBackSprite ? -1 : 1) * -55;
 				y = (isBackSprite ? -1 : 1) + 1;
