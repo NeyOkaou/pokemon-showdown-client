@@ -349,7 +349,7 @@ export class BattleScene implements BattleSceneStub {
 		if (!loc.yscale && loc.yscale !== 0) loc.yscale = loc.scale;
 
 		let left = 210;
-		let top = 180;
+		let top = 228;
 		let scale = 2.0 - 0.5* ((loc.z!) / 200);
 		if (scale < 0.1) scale = 0.1;
 
@@ -586,7 +586,7 @@ export class BattleScene implements BattleSceneStub {
 			else if (gen <= 3) bg = `fx/${BattleBackdropsThree[this.numericId % BattleBackdropsThree.length]}?`;
 			else if (gen <= 4) bg = `fx/${BattleBackdropsFour[this.numericId % BattleBackdropsFour.length]}`;
 			else if (gen === 9) bg = `fx/${BattleBackdropsThree[this.numericId % BattleBackdropsThree.length]}`;
-			else bg = `sprites/gen6bgs/${BattleBackdrops[this.numericId % BattleBackdrops.length]}`;
+			else bg = `fx/${BattleBackdropsThree[this.numericId % BattleBackdropsThree.length]}?`;
 		}
 
 		this.backdropImage = bg;
@@ -2224,9 +2224,9 @@ export class PokemonSprite extends Sprite {
 		} else if (this.scene.gen <= 3) {
 			statbarOffset += this.isFrontSprite ? 30 : 5;
 		}else if  (this.scene.gen === 9) {
-                        statbarOffset += this.isFrontSprite ? 30 : 5;
+                        statbarOffset += this.isFrontSprite ? 2000 : 0;
 		} else if (this.scene.gen !== 5) {
-			statbarOffset += this.isFrontSprite ? 30 : 20;
+			statbarOffset += this.isFrontSprite ? 30 : 5;
 		}
 
 		let pos = this.scene.pos({
@@ -3224,25 +3224,12 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-aquacordetown.jpg',
-	'bg-beach.jpg',
-	'bg-city.jpg',
-	'bg-dampcave.jpg',
-	'bg-darkbeach.jpg',
-	'bg-darkcity.jpg',
-	'bg-darkmeadow.jpg',
-	'bg-deepsea.jpg',
-	'bg-desert.jpg',
-	'bg-earthycave.jpg',
-	'bg-elite4drake.jpg',
-	'bg-forest.jpg',
-	'bg-icecave.jpg',
-	'bg-leaderwallace.jpg',
-	'bg-library.jpg',
-	'bg-meadow.jpg',
-	'bg-orasdesert.jpg',
-	'bg-orassea.jpg',
-	'bg-skypillar.jpg',
+	'bg-gen3.png',
+        'bg-gen3-cave.png',
+        'bg-gen3-ocean.png',
+        'bg-gen3-sand.png',
+        'bg-gen3-forest.png',
+        'bg-gen3-arena.png',
 ];
 
 export const BattleOtherAnims: AnimTable = {

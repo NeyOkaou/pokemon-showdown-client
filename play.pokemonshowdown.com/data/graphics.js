@@ -349,7 +349,7 @@ if(!loc.xscale&&loc.xscale!==0)loc.xscale=loc.scale;
 if(!loc.yscale&&loc.yscale!==0)loc.yscale=loc.scale;
 
 var left=210;
-var top=210;
+var top=228;
 var scale=2.0-0.5*(loc.z/200);
 if(scale<0.1)scale=0.1;
 
@@ -586,7 +586,7 @@ if(gen<=2)bg='fx/bg-gen2.png?';else
 if(gen<=3)bg="fx/"+BattleBackdropsThree[this.numericId%BattleBackdropsThree.length]+"?";else
 if(gen<=4)bg="fx/"+BattleBackdropsFour[this.numericId%BattleBackdropsFour.length];else
 if(gen===9)bg="fx/"+BattleBackdropsThree[this.numericId%BattleBackdropsThree.length];else
-bg="sprites/gen6bgs/"+BattleBackdrops[this.numericId%BattleBackdrops.length];
+bg="fx/"+BattleBackdropsThree[this.numericId%BattleBackdropsThree.length]+"?";
 }
 
 this.backdropImage=bg;
@@ -1627,26 +1627,26 @@ case 9:
 this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;
 case 10:
-this.bgm=BattleSound.loadBgm('audio/xy-trainer.mp3',7802,82469,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',7802,82469,this.bgm);
 break;
 case 11:
-this.bgm=BattleSound.loadBgm('audio/xy-rival.mp3',7802,58634,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',7802,58634,this.bgm);
 break;
 case 12:
-this.bgm=BattleSound.loadBgm('audio/oras-trainer.mp3',13579,91548,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',13579,91548,this.bgm);
 break;
 case 13:
-this.bgm=BattleSound.loadBgm('audio/oras-rival.mp3',14303,69149,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',14303,69149,this.bgm);
 break;
 case 14:
-this.bgm=BattleSound.loadBgm('audio/sm-trainer.mp3',8323,89230,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',8323,89230,this.bgm);
 break;
 case-101:
-this.bgm=BattleSound.loadBgm('audio/spl-elite4.mp3',3962,152509,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',3962,152509,this.bgm);
 break;
 case 15:
 default:
-this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/black-knife.mp3',11389,62158,this.bgm);
 break;
 }
 
@@ -2224,9 +2224,9 @@ statbarOffset+=this.isFrontSprite?20:1;
 }else if(this.scene.gen<=3){
 statbarOffset+=this.isFrontSprite?30:5;
 }else if(this.scene.gen===9){
-statbarOffset+=this.isFrontSprite?30:5;
+statbarOffset+=this.isFrontSprite?2000:0;
 }else if(this.scene.gen!==5){
-statbarOffset+=this.isFrontSprite?30:20;
+statbarOffset+=this.isFrontSprite?30:5;
 }
 
 var pos=this.scene.pos({
@@ -3224,25 +3224,12 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-aquacordetown.jpg',
-'bg-beach.jpg',
-'bg-city.jpg',
-'bg-dampcave.jpg',
-'bg-darkbeach.jpg',
-'bg-darkcity.jpg',
-'bg-darkmeadow.jpg',
-'bg-deepsea.jpg',
-'bg-desert.jpg',
-'bg-earthycave.jpg',
-'bg-elite4drake.jpg',
-'bg-forest.jpg',
-'bg-icecave.jpg',
-'bg-leaderwallace.jpg',
-'bg-library.jpg',
-'bg-meadow.jpg',
-'bg-orasdesert.jpg',
-'bg-orassea.jpg',
-'bg-skypillar.jpg'];
+'bg-gen3.png',
+'bg-gen3-cave.png',
+'bg-gen3-ocean.png',
+'bg-gen3-sand.png',
+'bg-gen3-forest.png',
+'bg-gen3-arena.png'];
 
 
 var BattleOtherAnims={
