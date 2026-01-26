@@ -679,6 +679,8 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	shroomalice: 1512 + 128,
 	jamush: 1512 + 129,
 	mycellum: 1512 + 130,
+	verote: 1512 + 131,
+	rottenia: 1512 + 132,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
