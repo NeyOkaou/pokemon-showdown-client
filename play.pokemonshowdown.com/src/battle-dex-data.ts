@@ -681,6 +681,8 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	mycellum: 1512 + 130,
 	verote: 1512 + 131,
 	rottenia: 1512 + 132,
+	veuvoile: 1512 + 133,
+	hierocculte: 1512 + 134,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
