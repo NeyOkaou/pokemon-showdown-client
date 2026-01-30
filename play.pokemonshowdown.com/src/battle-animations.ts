@@ -1600,7 +1600,11 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 896, 47462, this.bgm);
 			break;
 		case 1:
+<<<<<<< HEAD
 			this.bgm = BattleSound.loadBgm('audio/black-knife.mp33', 13440, 96959, this.bgm);
+=======
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 13440, 96959, this.bgm);
+>>>>>>> 044836f1d5044f1609a17de873eaa60d373eb4d7
 			break;
 		case 2:
 			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 13888, 66352, this.bgm);
