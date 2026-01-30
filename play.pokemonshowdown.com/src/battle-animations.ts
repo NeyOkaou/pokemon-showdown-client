@@ -1583,7 +1583,7 @@ export class BattleScene implements BattleSceneStub {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 15);
+		this.setBgm(1 + this.numericId % 5);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1591,62 +1591,35 @@ export class BattleScene implements BattleSceneStub {
 
 		switch (bgmNum) {
 		case -1:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1661, 68131, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case -2:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 9000, 57815, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case -3:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 896, 47462, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 1:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp33', 13440, 96959, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 2:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 13888, 66352, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 3:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 23731, 125086, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 4:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 13003, 94656, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 5:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 14629, 110109, this.bgm);
-			break;
-		case 6:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 19180, 57373, this.bgm);
-			break;
-		case 7:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 15503, 110984, this.bgm);
-			break;
-		case 8:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 14626, 58986, this.bgm);
-			break;
-		case 9:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 7152, 68708, this.bgm);
-			break;
-		case 10:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 7802, 82469, this.bgm);
-			break;
-		case 11:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 7802, 58634, this.bgm);
-			break;
-		case 12:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 13579, 91548, this.bgm);
-			break;
-		case 13:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 14303, 69149, this.bgm);
-			break;
-		case 14:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 8323, 89230, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case -101:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 3962, 152509, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		case 15:
 		default:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 11389, 62158, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 1000, 116000, this.bgm);
 			break;
 		}
 
