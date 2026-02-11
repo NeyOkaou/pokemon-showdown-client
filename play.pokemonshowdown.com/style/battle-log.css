@@ -950,8 +950,8 @@ details[open] .expandbutton.fa-caret-right:before {
 	border-color: #627d97;
 }
 .infobox-limited {
-	max-height: 200px;
-	overflow: auto;
+    max-height: none;
+    overflow: visible;
 }
 .message-learn-canlearn {
 	font-weight: bold;
