@@ -6901,62 +6901,6 @@ export const BattleMoveAnims: AnimTable = {
 	chipaway: {
 		anim: BattleOtherAnims.contactattack.anim,
 	},
-	bouncybubble: {
-		anim(scene, [attacker, defender]) {
-			scene.showEffect('iceball', {
-				x: defender.x,
-				y: defender.y - 30,
-				z: defender.z,
-				scale: 1,
-				opacity:0.7,
-				time: 500,
-			}, {
-				x: defender.x + 70,
-				scale: 0.8,
-				opacity: 0.3,
-				time: 800,
-			}, 'linear', 'fade');
-			scene.showEffect('iceball', {
-				x: defender.x,
-				y: defender.y - 30,
-				z: defender.z,
-				scale: 1,
-				opacity:0.7,
-				time: 500,
-			}, {
-				x: defender.x - 70,
-				scale: 0.8,
-				opacity: 0.3,
-				time: 800,
-			}, 'linear', 'fade');
-
-			attacker.anim({
-				x: defender.x,
-				y: defender.y + 80,
-				z: defender.behind(-30),
-				time: 400,
-			}, 'ballistic');
-			attacker.anim({
-				x: defender.x,
-				y: defender.y + 5,
-				z: defender.z,
-				time: 100,
-			});
-			attacker.anim({
-				time: 600,
-			}, 'ballistic2Back');
-			defender.delay(450);
-			defender.anim({
-				y: defender.y - 30,
-				z: defender.behind(20),
-				yscale: 0.5,
-				time: 200,
-			}, 'swing');
-			defender.anim({
-				time: 300,
-			}, 'swing');
-		},
-	},
 	bodyslam: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('wisp', {
@@ -18524,70 +18468,6 @@ export const BattleMoveAnims: AnimTable = {
 				time: 700,
 			}, 'swing', 'fade');
 			scene.showEffect('electroball', {
-				x: defender.leftof(-40),
-				y: defender.y,
-				z: defender.z,
-				scale: 0.1,
-				opacity: 0,
-				time: 700,
-			}, {
-				x: defender.leftof(10),
-				y: defender.y - 15,
-				z: defender.z,
-				scale: 0.5,
-				opacity: 1,
-				time: 900,
-			}, 'swing', 'explode');
-		},
-	},
-	freezyfrost: {
-		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-icecave.jpg')`, 1000, 0.6);
-			scene.showEffect('icicle', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.15,
-				opacity: 0,
-			}, {
-				x: defender.leftof(40),
-				y: defender.y + 15,
-				z: defender.z,
-				scale: 0.3,
-				opacity: 0.7,
-				time: 500,
-			}, 'decel', 'fade');
-			if (defender.isMissedPokemon) return;
-			scene.showEffect('icicle', {
-				x: attacker.x,
-				y: attacker.y,
-				z: attacker.z,
-				scale: 0.15,
-				opacity: 0,
-			}, {
-				x: defender.leftof(40),
-				y: defender.y + 15,
-				z: defender.z,
-				scale: 0.3,
-				opacity: 0.7,
-				time: 500,
-			}, 'decel', 'fade');
-			scene.showEffect('icicle', {
-				x: defender.leftof(40),
-				y: defender.y + 15,
-				z: defender.z,
-				scale: 0.3,
-				opacity: 0.7,
-				time: 500,
-			}, {
-				x: defender.leftof(-40),
-				y: defender.y,
-				z: defender.z,
-				scale: 0.2,
-				opacity: 1,
-				time: 700,
-			}, 'swing', 'fade');
-			scene.showEffect('icicle', {
 				x: defender.leftof(-40),
 				y: defender.y,
 				z: defender.z,
