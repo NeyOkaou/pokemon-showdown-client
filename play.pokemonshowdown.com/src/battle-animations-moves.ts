@@ -9570,6 +9570,45 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.punchattack.anim(scene, [attacker, defender]);
 		},
 	},
+	jampunch: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#000000', 700, 0.3);
+			scene.showEffect('poisonwisp', {
+				x: defender.x + 40,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 350,
+			}, {
+				scale: 7,
+				opacity: 0,
+			}, 'decel');
+			scene.showEffect('poisonwisp', {
+				x: defender.x - 40,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 500,
+			}, {
+				scale: 7,
+				opacity: 0,
+			}, 'decel');
+			scene.showEffect('poisonwisp', {
+				x: defender.x + 10,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 650,
+			}, {
+				scale: 7,
+				opacity: 0,
+			}, 'decel');
+			BattleOtherAnims.punchattack.anim(scene, [attacker, defender]);
+		},
+	},
 	dynamicpunch: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#000000', 700, 0.3);
@@ -23481,6 +23520,65 @@ export const BattleMoveAnims: AnimTable = {
 				z: defender.behind(0),
 				opacity: 0.7,
 				time: 400,
+			}, 'decel', 'explode');
+		},
+	},
+	mermaidsong: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('heart', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.7,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(0),
+				opacity: 0.6,
+				time: 400,
+			}, 'decel', 'explode');
+			scene.showEffect('heart', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 100,
+			}, {
+				x: defender.x + 20,
+				y: defender.y - 10,
+				z: defender.behind(0),
+				opacity: 0.6,
+				time: 500,
+			}, 'decel', 'explode');
+			scene.showEffect('heart', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 200,
+			}, {
+				x: defender.x - 20,
+				y: defender.y + 10,
+				z: defender.behind(0),
+				opacity: 0.6,
+				time: 600,
+			}, 'decel', 'explode');
+			scene.showEffect('heart', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 300,
+			}, {
+				x: defender.x,
+				y: defender.y - 5,
+				z: defender.behind(0),
+				opacity: 0.6,
+				time: 700,
 			}, 'decel', 'explode');
 		},
 	},
