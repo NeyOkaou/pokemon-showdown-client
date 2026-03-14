@@ -20057,7 +20057,7 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.4,
 				time: 300,
 			}, {
-	-			y: defender.y - 5,
+							y: defender.y - 5,
 				opacity: 1,
 				time: 800,
 			}, 'decel', 'fade');
@@ -20096,7 +20096,7 @@ export const BattleMoveAnims: AnimTable = {
                                 scale: 0.4,
                                 time: 300,
                         }, {
-        -                       y: defender.y - 5,
+                               y: defender.y - 5,
                                 opacity: 1,
                                 time: 800,
                         }, 'decel', 'fade');
