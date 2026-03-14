@@ -20057,12 +20057,51 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.4,
 				time: 300,
 			}, {
-				y: defender.y - 5,
+	-			y: defender.y - 5,
 				opacity: 1,
 				time: 800,
 			}, 'decel', 'fade');
 		},
 	},
+	contagion: {
+                anim(scene, [attacker, defender]) {
+                        scene.showEffect('icicle', {
+                                x: defender.x + 10,
+                                y: defender.y + 90,
+                                z: defender.z,
+                                opacity: 0,
+                                scale: 0.4,
+                        }, {
+                                y: defender.y - 5,
+                                opacity: 1,
+                                time: 500,
+                        }, 'decel', 'fade');
+                        scene.showEffect('poisonwisp', {
+                                x: defender.x + 30,
+                                y: defender.y + 90,
+                                z: defender.z,
+                                opacity: 0,
+                                scale: 0.4,
+                                time: 150,
+                        }, {
+                                y: defender.y - 5,
+                                opacity: 1,
+                                time: 650,
+                        }, 'decel', 'fade');
+                        scene.showEffect('icicle', {
+                                x: defender.x - 30,
+                                y: defender.y + 90,
+                                z: defender.z,
+                                opacity: 0,
+                                scale: 0.4,
+                                time: 300,
+                        }, {
+        -                       y: defender.y - 5,
+                                opacity: 1,
+                                time: 800,
+                        }, 'decel', 'fade');
+                },
+        },
 	fireblast: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#000000', 500, 0.7);
