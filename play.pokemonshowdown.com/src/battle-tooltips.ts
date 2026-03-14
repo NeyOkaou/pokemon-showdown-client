@@ -1153,8 +1153,10 @@ export class BattleTooltips {
 			stats.atk *= 2;
 		}
 		if(ability === 'epidemie') {
-			stats.atk /= 2;
-			stats.spa /= 2;
+			if(!(this.pokemonHasType(pokemon, 'Ice') || this.pokemonHasType(pokemon, 'Poison') ){
+				stats.atk = Math.floor(atk / 2);
+				stats.spa = Math.floor(stats.spa / 2);
+			}
 		}
 		if (ability === 'hustle' || (ability === 'gorillatactics' && !clientPokemon?.volatiles['dynamax'])) {
 			stats.atk = Math.floor(stats.atk * 1.5);
