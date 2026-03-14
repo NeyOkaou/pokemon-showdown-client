@@ -1153,7 +1153,7 @@ export class BattleTooltips {
 			stats.atk *= 2;
 		}
 		if(ability === 'epidemie') {
-			if(!(this.pokemonHasType(pokemon, 'Ice') || this.pokemonHasType(pokemon, 'Poison') ){
+			if(!this.pokemonHasType(pokemon, 'Ice') && !this.pokemonHasType(pokemon, 'Poison')){
 				stats.atk = Math.floor(atk / 2);
 				stats.spa = Math.floor(stats.spa / 2);
 			}
