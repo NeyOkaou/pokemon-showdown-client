@@ -897,9 +897,13 @@ export class BattleTextParser {
 				return line1 + template.replace('[POKEMON]', this.pokemon(kwArgs.of)).replace('[SOURCE]', this.pokemon(pokemon));
 			}
 
-			if ((id === 'mummy' || id === 'lingeringaroma') && kwArgs.ability) {
+			if ((id === 'mummy' || id === 'lingeringaroma' || id === 'epidemie') && kwArgs.ability) {
 				line1 += this.ability(kwArgs.ability, target);
-				line1 += this.ability(id === 'mummy' ? 'Mummy' : 'Lingering Aroma', target);
+
+				if (id !== 'epidemie') {
+					line1 += this.ability(id === 'mummy' ? 'Mummy' : 'Lingering Aroma', target);
+				}
+
 				const template = this.template('changeAbility', id);
 				return line1 + template.replace('[TARGET]', this.pokemon(target));
 			}
