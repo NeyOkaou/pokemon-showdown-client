@@ -3009,21 +3009,15 @@ export class Battle {
 				break;
 			case 'lingeringaroma':
 			case 'mummy':
-				if (!kwArgs.ability) break; // if Mummy activated but failed, no ability will have been sent
-				let ability = Dex.abilities.get(kwArgs.ability);
-				this.activateAbility(target, ability.name);
-				this.activateAbility(poke, effect.name);
-				this.scene.wait(700);
-				this.activateAbility(target, effect.name, true);
-				break;
-			 case 'epidemie':
+			case 'epidemie':{
                                 if (!kwArgs.ability) break; // if Mummy activated but failed, no ability will have been>
                                 let ability = Dex.abilities.get(kwArgs.ability);
                                 this.activateAbility(target, ability.name);
                                 this.activateAbility(poke, effect.name);
                                 this.scene.wait(700);
                                 this.activateAbility(target, effect.name, true);
-                                break;
+                                break;	
+			}
 			// item activations
 			case 'leppaberry':
 			case 'mysteryberry':
