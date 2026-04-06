@@ -2137,6 +2137,9 @@ export class BattleTooltips {
 		if (move.flags['heal']) {
 			value.abilityModify(1.3, "Vampire");
 		}
+		if (move.flags['wind']) {
+                        value.abilityModify(1.2, "Wind Power");
+                }
 		if (value.value <= 60) {
 			value.abilityModify(1.5, "Technician");
 		}
