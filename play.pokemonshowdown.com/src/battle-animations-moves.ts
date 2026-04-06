@@ -4602,6 +4602,30 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'ballistic');
 		},
 	},
+	beautemps: {
+	anim(scene, [attacker]) {
+		attacker.anim({
+			opacity: 0,
+			time: 100,
+		}, 'linear');
+		attacker.anim({
+			opacity: 1,
+			time: 250,
+		}, 'linear');
+		attacker.anim({
+			opacity: 0,
+			time: 350,
+		}, 'linear');
+		attacker.anim({
+			opacity: 1,
+			time: 450,
+		}, 'linear');
+		attacker.anim({
+			opacity: 0,
+			time: 550,
+		}, 'linear');
+	},
+},
 	recover: {
 		anim: BattleOtherAnims.chargestatus.anim,
 	},
