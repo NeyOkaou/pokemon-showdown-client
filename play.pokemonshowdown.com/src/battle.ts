@@ -2624,6 +2624,9 @@ export class Battle {
 			case 'taunt':
 				this.scene.resultAnim(poke, 'Taunted', 'bad');
 				break;
+			case 'epidemie':
+				this.scene.resultAnim(poke, 'Epidemie', 'bad');
+				break;
 			case 'imprison':
 				this.scene.resultAnim(poke, 'Imprisoning', 'good');
 				break;
@@ -2779,6 +2782,9 @@ export class Battle {
 				case 'torment':
 					this.scene.resultAnim(poke, 'Torment&nbsp;ended', 'good');
 					break;
+				case 'epidemie':
+   					this.scene.resultAnim(poke, 'Epidemie ended', 'good');
+    				break;
 				case 'encore':
 					this.scene.resultAnim(poke, 'Encore&nbsp;ended', 'good');
 					break;
@@ -3009,7 +3015,7 @@ export class Battle {
 				break;
 			case 'lingeringaroma':
 			case 'mummy':
-			case 'epidemie':{
+			case 'epidemix':{
                                 if (!kwArgs.ability) break; // if Mummy activated but failed, no ability will have been>
                                 let ability = Dex.abilities.get(kwArgs.ability);
                                 this.activateAbility(target, ability.name);
