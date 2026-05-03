@@ -1110,7 +1110,7 @@ export class BattleTooltips {
 
 		// check for light ball, thick club, metal/quick powder
 		// the only stat modifying items in gen 2 were light ball, thick club, metal powder
-		if (item === 'lightball' && speciesName === 'Pikachu' && this.battle.gen !== 4) {
+		if (item === 'lightball' && ( speciesName === 'Pikachu' || speciesName === 'Gerbuzz' )&& this.battle.gen !== 4) {
 			if (this.battle.gen > 4) stats.atk *= 2;
 			stats.spa *= 2;
 		}

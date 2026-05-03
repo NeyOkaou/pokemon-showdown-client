@@ -1621,7 +1621,7 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/FNAFW.mp3', 100, 60000, this.bgm);
 			break;
 		case 8:
-			this.bgm = BattleSound.loadBgm('audio/riskofrain.mp3', 100, 295000, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/riskofrain.mp3', 100, 97000, this.bgm);
 			break;
 		case 9:
 			this.bgm = BattleSound.loadBgm('audio/Devourer.mp3', 10000, 241000, this.bgm);
