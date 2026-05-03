@@ -701,7 +701,15 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	lampiposa: 1512 + 150,
 	cheepouf: 1512 + 151,
 	cheesetah: 1512 + 152,
-
+	kerocorn: 1512 + 153,
+	croacorn: 1512 + 154,
+	cendracine: 1512 + 155,
+	choracorn: 1512 + 156,
+	sylvesagio: 1512 + 157,
+	sinjini: 1512 + 158,
+	alwy: 1512 + 159,
+	verophyla: 1512 + 160,
+	veracina: 1512 + 161,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
