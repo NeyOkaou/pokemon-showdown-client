@@ -39242,8 +39242,6 @@ BattleMoveAnims['slackoff'] = { anim: BattleMoveAnims['rest'].anim };
 BattleMoveAnims['secretpower'] = { anim: BattleMoveAnims['technoblast'].anim };
 BattleMoveAnims['naturalgift'] = { anim: BattleMoveAnims['technoblast'].anim };
 
-BattleMoveAnims['firelash'] = { anim: BattleMoveAnims['multiattack'].anim };
-
 BattleMoveAnims['fleurcannon'] = { anim: BattleMoveAnims['diamondstorm'].anim };
 
 BattleMoveAnims['bloomdoom'] = { anim: BattleMoveAnims['petaldance'].anim };
