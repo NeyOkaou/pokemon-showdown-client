@@ -1361,10 +1361,11 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.1,
 				opacity: 0.8,
 			}, {
-				scale: 50,
+				scale: 35,
 				opacity: 1,
-				time: 500,
+				time: 800,
 			}, 'linear', 'fade');
+			
 		},
 	},
 	tailwind: {
