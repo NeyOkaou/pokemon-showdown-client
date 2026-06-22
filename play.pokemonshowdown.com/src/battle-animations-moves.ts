@@ -1351,6 +1351,22 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	flashbang: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#ffffff', 600, 0.6);
+			scene.showEffect('wisp', {
+				x: attacker.leftof(-10),
+				y: attacker.y + 10,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.8,
+			}, {
+				scale: 50,
+				opacity: 1,
+				time: 500,
+			}, 'linear', 'fade');
+		},
+	},
 	tailwind: {
 		anim(scene, [attacker]) {
 			scene.showEffect('iceball', {
