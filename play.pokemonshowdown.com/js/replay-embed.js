@@ -28,27 +28,27 @@ function requireScript(url) {
 	document.head.appendChild(scriptEl);
 }
 
-linkStyle('https://play.pokemonmood.com/style/font-awesome.css?');
-linkStyle('https://play.pokemonmood.com/style/battle.css?a7');
-linkStyle('https://play.pokemonmood.com/style/replay.css?a7');
-linkStyle('https://play.pokemonmood.com/style/utilichart.css?a7');
+linkStyle('https://play.pkmnmood.com/style/font-awesome.css?');
+linkStyle('https://play.pkmnmood.com/style/battle.css?a7');
+linkStyle('https://play.pkmnmood.com/style/replay.css?a7');
+linkStyle('https://play.pkmnmood.com/style/utilichart.css?a7');
 
-requireScript('https://play.pokemonmood.com/js/lib/ps-polyfill.js');
-requireScript('https://play.pokemonmood.com/config/config.js?a7');
-requireScript('https://play.pokemonmood.com/js/lib/jquery-1.11.0.min.js');
-requireScript('https://play.pokemonmood.com/js/lib/html-sanitizer-minified.js');
-requireScript('https://play.pokemonmood.com/js/battle-sound.js');
-requireScript('https://play.pokemonmood.com/js/battledata.js?a7');
-requireScript('https://play.pokemonmood.com/data/pokedex-mini.js?a7');
-requireScript('https://play.pokemonmood.com/data/pokedex-mini-bw.js?a7');
-requireScript('https://play.pokemonmood.com/data/graphics.js?a7');
-requireScript('https://play.pokemonmood.com/data/pokedex.js?a7');
-requireScript('https://play.pokemonmood.com/data/moves.js?a7');
-requireScript('https://play.pokemonmood.com/data/abilities.js?a7');
-requireScript('https://play.pokemonmood.com/data/items.js?a7');
-requireScript('https://play.pokemonmood.com/data/teambuilder-tables.js?a7');
-requireScript('https://play.pokemonmood.com/js/battle-tooltips.js?a7');
-requireScript('https://play.pokemonmood.com/js/battle.js?a7');
+requireScript('https://play.pkmnmood.com/js/lib/ps-polyfill.js');
+requireScript('https://play.pkmnmood.com/config/config.js?a7');
+requireScript('https://play.pkmnmood.com/js/lib/jquery-1.11.0.min.js');
+requireScript('https://play.pkmnmood.com/js/lib/html-sanitizer-minified.js');
+requireScript('https://play.pkmnmood.com/js/battle-sound.js');
+requireScript('https://play.pkmnmood.com/js/battledata.js?a7');
+requireScript('https://play.pkmnmood.com/data/pokedex-mini.js?a7');
+requireScript('https://play.pkmnmood.com/data/pokedex-mini-bw.js?a7');
+requireScript('https://play.pkmnmood.com/data/graphics.js?a7');
+requireScript('https://play.pkmnmood.com/data/pokedex.js?a7');
+requireScript('https://play.pkmnmood.com/data/moves.js?a7');
+requireScript('https://play.pkmnmood.com/data/abilities.js?a7');
+requireScript('https://play.pkmnmood.com/data/items.js?a7');
+requireScript('https://play.pkmnmood.com/data/teambuilder-tables.js?a7');
+requireScript('https://play.pkmnmood.com/js/battle-tooltips.js?a7');
+requireScript('https://play.pkmnmood.com/js/battle.js?a7');
 
 var Replays = {
 	battle: null,

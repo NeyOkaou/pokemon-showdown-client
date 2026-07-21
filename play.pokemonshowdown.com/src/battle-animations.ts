@@ -1583,7 +1583,7 @@ export class BattleScene implements BattleSceneStub {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 10);
+		this.setBgm(1 + this.numericId % 11);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1618,7 +1618,7 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/BreathFire.mp3', 100, 88000, this.bgm);
 			break;
 		case 7:
-			this.bgm = BattleSound.loadBgm('audio/FNAFW.mp3', 100, 60000, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/BreakTheIce.mp3', 100, 60000, this.bgm);
 			break;
 		case 8:
 			this.bgm = BattleSound.loadBgm('audio/riskofrain.mp3', 100, 97000, this.bgm);
@@ -1630,7 +1630,7 @@ export class BattleScene implements BattleSceneStub {
 			this.bgm = BattleSound.loadBgm('audio/SMT3.mp3', 100, 137000, this.bgm);
 			break;
 		case 11:
-			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 25000, 117000, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/HeavenlyOddFoe.mp3', 25000, 117000, this.bgm);
 			break;
 		case 12:
 			this.bgm = BattleSound.loadBgm('audio/black-knife.mp3', 25000, 117000, this.bgm);
