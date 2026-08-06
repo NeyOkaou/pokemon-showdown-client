@@ -712,7 +712,7 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	veracina: 1512 + 161,
 	chromon: 1512 + 162,
 	bulballon: 1512 + 163,
-	finfok: 1512 + 164,
+	finkfok: 1512 + 164,
 	demonitrax: 1512 + 165,
 	bananya: 1512 + 166,
 	jolibelle: 1512 + 167,
