@@ -710,6 +710,17 @@ export const BattlePokemonIconIndexes: { [id: string]: number } = {
 	alwy: 1512 + 159,
 	verophyla: 1512 + 160,
 	veracina: 1512 + 161,
+	chromon: 1512 + 162,
+	bulballon: 1512 + 163,
+	finfok: 1512 + 164,
+	demonitrax: 1512 + 165,
+	bananya: 1512 + 166,
+	jolibelle: 1512 + 167,
+	congenille: 1512 + 168,
+	chillopede: 1512 + 169,
+	grounder: 1512 + 170,
+	wufur: 1512 + 171,
+	fluffury: 1512 + 172,
 };
 
 export const BattlePokemonIconIndexesLeft: { [id: string]: number } = {
