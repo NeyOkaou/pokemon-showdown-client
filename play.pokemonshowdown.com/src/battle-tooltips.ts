@@ -1116,7 +1116,7 @@ export class BattleTooltips {
 		}
 
 		if (item === 'thickclub') {
-			if (speciesName === 'Marowak' || speciesName === 'Cubone') {
+			if (speciesName === 'Marowak' || speciesName === 'Cubone'|| speciesName === 'Wufur'|| speciesName === 'Fluffury') {
 				stats.atk *= 2;
 			}
 		}
